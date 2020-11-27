@@ -93,8 +93,8 @@ protected:
 			for (auto s : listSection)	{                                              //automatically iterate through the list
 				if (s != 0)	{                                                     //if not equal to 0 then draw
 					Fill(
-                        nSection * fSectionWidth + 10 - fLevelPosition, ScreenHeight() - s,            //bottom-top coordinate of obstacle
-                        nSection * fSectionWidth + 15 - fLevelPosition, ScreenHeight(),                //bottom-bottom coordinate of obstacle
+                        nSection * fSectionWidth + 10 - fLevelPosition, ScreenHeight() - s,            //top-left coordinate of bottom obstacle
+                        nSection * fSectionWidth + 15 - fLevelPosition, ScreenHeight(),                //bottom-right coordinate of bottom obstacle
                         PIXEL_SOLID, FG_GREEN
                     );  
                     
